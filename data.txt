@@ -1,0 +1,10 @@
+CREATE DATABASE tienda_cafe CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE tienda_cafe;
+
+CREATE TABLE productos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  precio DECIMAL(10,2) NOT NULL,
+  imagen VARCHAR(255) NOT NULL,
+  creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

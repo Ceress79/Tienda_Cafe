@@ -1,0 +1,166 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- BODY --- */
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f6f1;
+  color: #4a2c2a;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  width: 250px;
+  background: #6f4e37;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ffe7ba;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  background: #8b5e3c;
+  color: white;
+}
+
+.sidebar footer {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: auto;
+  color: #e0c9a6;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #6f4e37;
+}
+
+/* --- FORMULARIO --- */
+form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #d1bfa7;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #6f4e37;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #8b5e3c;
+}
+
+/* --- LISTADO DE PRODUCTOS --- */
+.table-container {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.table-container th {
+  background: #6f4e37;
+  color: white;
+}
+
+.table-container tr:hover {
+  background: #f2ede7;
+}
+
+.btn-eliminar {
+  background: #b33a3a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #e04848;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
