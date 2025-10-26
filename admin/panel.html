@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <h2>☕ Admin Café</h2>
+      <nav>
+        <a href="panel.html">📦 Productos</a>
+        <a href="../index.html">🏠 Ir a la tienda</a>
+      </nav>
+    </div>
+    <footer>
+      <p>© 2025 Tienda Café | Panel</p>
+    </footer>
+  </aside>
+
+  <section class="main-content">
+    <h1>Gestión de Productos</h1>
+
+    <form id="nuevo-producto-form">
+      <input type="text" id="nombre-producto" placeholder="Nombre del producto" required>
+      <input type="number" id="precio-producto" placeholder="Precio" step="0.01" required>
+      <input type="text" id="imagen-producto" placeholder="Ruta de imagen (Escribe: img/avatar3.gif)" required>
+      <button type="submit">Agregar producto</button>
+    </form>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-productos-body">
+            </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="panel.js"></script>
+</body>
+</html>

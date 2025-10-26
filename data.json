@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Café Espresso Intenso",
+    "precio": 2.50,
+    "imagen": "img/avatar3.gif"
+  },
+  {
+    "id": 2,
+    "nombre": "Capuchino Cremoso",
+    "precio": 3.75,
+    "imagen": "img/capuchino.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Latte Vainilla",
+    "precio": 4.00,
+    "imagen": "img/latte.jpg"
+  }
+]
